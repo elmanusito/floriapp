@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        
+        <!-- Title -->
+        <title>FloriApp</title>
+
+        <!-- Link -->
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+        <link rel="stylesheet" href="./lib/jquery-mobile-1.4.5/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="./lib/jquery-mobile-1.4.5/demos/_assets/css/jqm-demos.css">
+        <link rel="shortcut icon" href="../favicon.ico">
+        
+        <!-- Scripts -->
+        <script src="./lib/jquery-mobile-1.4.5/jquery.min.js"></script>
+        <script src="./lib/jquery-mobile-1.4.5/demos/_assets/js/index.js"></script>
+        <script src="./lib/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="./lib/jquery-mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="./js/index-manu.js"></script>
+    </head>
+    <body>
+        <div class="app" data-role="page">
+           
+            <!-- panel -->
+            <div data-role="panel" id="options-panel" data-display="overlay" data-theme="b" style="overflow:auto; position:fixed;" data-animate="true">
+             <!--<div data-role="panel" id="options-panel" data-position="left" data-display="overlay"> -->
+                <a href="#my-header" data-rel="close">Close panel</a>
+            </div>
+            <!-- /panel -->
+            <!-- header -->
+            <div data-role="header" data-position="fixed">
+                <h1>Flori App</h1>
+                <a href="#options-panel" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Options</a>
+            </div>
+            <!-- /header -->
+
+            <!-- info -->
+            <div id="clima" class="info-content ui-content"></div>
+            <!-- /info -->
+            
+            <!-- main -->
+            <div role="main" class="main-content ui-content"></div>
+            <!-- /main -->
+
+            <!-- app-content -->
+            <div class="app-content-1 ui-content">
+            <a href="#dialogo" data-rel="dialog" data-role="button" data-transition="flip">Is this a question?</a>
+
+
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="app-content-2 ui-content">
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="app-content-3 ui-content">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <!-- /app-content -->
+            
+            <!-- footer -->
+            <div data-role="footer" data-position="fixed">
+                <h4>Footer content</h4>
+            </div><!-- /footer -->
+        </div>
+
+        <div data-role="page" data-url="spec.html" id="dialogo">
+            <div data-role="header">
+                <h1>Info de Floripa</h1>
+            </div>
+            <div data-role="content">
+                <p>Is this an answer?</p>
+                <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">Volver</a>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <!--  <script type="text/javascript" src="js/index.js"></script> -->
+        <script type="text/javascript">
+            //app.initialize();
+        </script>
+    </body>
+</html>
